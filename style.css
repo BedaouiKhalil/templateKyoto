@@ -352,3 +352,235 @@ nav a{
     font-size: var(--fs-18);
   }
 }
+
+/* Pricing section */
+
+.pricing {
+  padding: 44px 10px 136px;
+  background-image: var(--radial-white-beige);
+}
+.pricing .heading-2 {
+  margin-bottom: 60px;
+}
+
+.pricing-cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-card {
+  width: 275px;
+  min-height: 400px;
+  padding: 18px;
+  background-color: var(--light-orange);
+  border-radius: 5px;
+  border: var(--dark-thick-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card h3 {
+  font-family: var(--accent-font);
+  font-size: var(--fs-26);
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-line {
+  width: 100%;
+  margin: 0 10px;
+  height: 1px;
+  background-color: var(--dark-base);
+}
+.plan-price {
+  font-size: var(--fs-24);
+  font-family: var(--accent-font);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.pricing-card ul {
+  margin-bottom: 36px;
+}
+.pricing-card li {
+  list-style-type: none;
+  display: flex;
+  font-weight: 500;
+}
+.pricing-card li:not(:last-of-type){
+  margin-bottom: 14px;
+} 
+.pricing-card li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.pricing-card button {
+  margin-top: auto;
+  padding: 10px;
+  font-size: var(--fs-16);
+  font-weight: bold;
+  cursor: pointer;
+  border: var(--dark-thick-border);
+  border-radius: 2px;
+  background-color: var(--light-white);
+}
+.pricing-card button:hover {
+  color: var(--light-white);
+  background-color: var(--dark-base);
+}
+
+.c1 {
+  transform: translateY(10px) rotate(-10deg);
+}
+.c2 {
+  transform: translateY(-10px);
+  z-index: 2;
+}
+.c3 {
+  transform: translateY(10px) rotate(10deg);
+}
+
+.shadow {
+  display: block;
+  margin: 20px auto 0;
+}
+
+@media (max-width: 900px) {
+  .pricing {
+    padding-bottom: 60px;
+  }
+  .pricing .heading-2 {
+    margin-bottom: 40px;
+  }
+  .pricing-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-card {
+    width: 100%;
+    max-width: 550px;
+    min-height: auto;
+    margin-bottom: 25px;
+  }
+  .pricing-card h3 {
+    font-size: var(--fs-22);
+  }
+  .plan-price {
+    font-size: var(--fs-20);
+  }
+  .card-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .pricing-card button {
+    padding: 8px;
+    font-size: var(--fs-14);
+  }
+  .c1 {
+    transform: none;
+  }
+  .c2 {
+    transform: none;
+    order: 3;
+  }
+  .c3 {
+    transform: none;
+  }
+  .shadow {
+    display: none;
+  }
+}
+
+
+/* Contact */
+.contact {
+  padding: 120px 10px;
+  background-image: url(ressources/tradition-japan.jpg);
+  background-position: center;
+  background-size: cover;
+  border-top: var(--dark-thick-border);
+}
+
+.rounded-contact {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: var(--almond);
+  padding: 50px 40px 92px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  border: var(--dark-thick-border);
+}
+
+.rounded-contact h2 {
+  margin-bottom: 44px;
+}
+.contact-list {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.contact-list img {
+  width: 30px;
+}
+.contact-list li {
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: var(--light-orange-pinky);
+  border: var(--dark-thick-border);
+}
+.contact-list li:not(:nth-child(3)){
+  margin-bottom: 15px;
+}
+
+.contact-list a, .contact-list span {
+  font-size: var(--fs-20);
+  color: var(--dark-base);
+  font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  .contact {
+    padding: 40px 10px;
+  }
+  .contact .heading-2 {
+    font-size: var(--fs-24);
+  }
+  .rounded-contact {
+    padding: 30px 20px;
+  }
+  .contact-list li {
+    padding: 10px;
+  }
+  .contact-list a,
+  .contact-list span {
+    font-size: var(--fs-14);
+    color: var(--dark-base);
+  }
+  .contact-list img {
+    width: 20px;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: var(--light-orange);
+  padding: 10px 0;
+  text-align: center;
+}
+footer a {
+  text-decoration-color: var(--dark-base);
+  color: var(--dark-base);
+  text-underline-offset: 4px;
+  font-weight: 500;
+}
